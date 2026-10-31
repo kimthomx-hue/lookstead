@@ -79,7 +79,11 @@ const HELP_FAQS = [
     items.forEach((item, index) => {
       const details = document.createElement('details');
       details.className = 'faq-item';
-      details.name = 'lookstead-faq';
+      try {
+        details.setAttribute('name', 'lookstead-faq');
+      } catch {
+        /* Exclusive accordion group: unsupported on some browsers */
+      }
 
       const summary = document.createElement('summary');
       summary.className = 'faq-question';

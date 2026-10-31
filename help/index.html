@@ -44,7 +44,71 @@
       <h1 class="faq-page-title">Frequently asked questions</h1>
       <p class="faq-page-lead">The questions our support team hears most.</p>
 
-      <div id="faq-list" class="faq-list"></div>
+      <div id="faq-list" class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-question-text">I paid but the app still shows a paywall. What gives?</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </summary>
+          <p class="faq-answer">
+            Tap Restore purchases in Settings or on the paywall. Use the same Apple ID or Google account you
+            paid with. If it still fails, email support with your receipt and we will check RevenueCat and
+            your account.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-question-text">How do I cancel my subscription or free trial?</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </summary>
+          <p class="faq-answer">
+            Subscriptions are managed by Apple or Google, not inside Lookstead. On iPhone: Settings, your
+            name, Subscriptions, Lookstead, Cancel. On Android: Google Play, Payments and subscriptions,
+            Subscriptions.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-question-text">I want a refund. How do I get one?</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </summary>
+          <p class="faq-answer">
+            Refund requests go through the App Store or Google Play. Apple: reportaproblem.apple.com. Google:
+            play.google.com/store/account/subscriptions. We cannot issue store refunds from our side.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-question-text">The app misread my photo or gave a useless answer.</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </summary>
+          <p class="faq-answer">
+            Try a clearer photo, better lighting, and a specific question. If the answer says Demo, the live
+            service is not connected on that build. Email support with what you asked and we can improve from
+            your example.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-question-text">The app keeps crashing or will not open.</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </summary>
+          <p class="faq-answer">
+            Update to the latest version, restart your phone, and free some storage. If it persists, email
+            support with your device model and iOS or Android version.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-question-text">How do I ask my first question?</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </summary>
+          <p class="faq-answer">
+            From Home, tap Take a photo or Choose from photos. Preview the image, pick or type your question,
+            then submit. Camera and library access are requested only when you start that flow.
+          </p>
+        </details>
+      </div>
 
       <button type="button" id="faq-see-all" class="faq-see-all">See all FAQs →</button>
 
@@ -58,6 +122,6 @@
       </section>
     </main>
 
-    <script src="/help.js"></script>
+    <script src="/help.js" defer></script>
   </body>
 </html>
