@@ -36,9 +36,9 @@ lookstead.com/
   main.js
   CNAME
   assets/
-  privacy.html
-  terms.html
-  help.html
+  privacy/index.html
+  terms/index.html
+  help/index.html
 ```
 
 (`github-pages-workflow.yml` is only a template — it is not deployed.)
