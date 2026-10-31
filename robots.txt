@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Legacy redirect stubs (canonical URLs live under /help/, /privacy/, /terms/)
+Disallow: /help.html
+Disallow: /privacy.html
+Disallow: /terms.html
+
+Sitemap: https://lookstead.com/sitemap.xml

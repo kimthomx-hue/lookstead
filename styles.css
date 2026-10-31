@@ -167,7 +167,8 @@ a {
   pointer-events: auto;
 }
 
-.hero h1 {
+.hero h1,
+.hero .hero-headline {
   margin: 0 0 1.125rem;
   font-size: clamp(2rem, 5.5vw, 3.25rem);
   font-weight: 600;

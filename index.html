@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Lookstead helps you figure out stuff at home with a photo and a question. Fixes, cleaning, maintenance." />
-    <title>Lookstead · Your home, understood</title>
+      content="Lookstead is a home assistant app for iPhone. Take a photo, ask a question, and get practical help with cleaning, repairs, maintenance and identifying things around your home." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Lookstead" />
+    <meta name="theme-color" content="#0f1210" />
+    <title>Lookstead | AI photo home assistant for repairs and maintenance</title>
+    <link rel="canonical" href="https://lookstead.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lookstead" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:url" content="https://lookstead.com/" />
+    <meta property="og:title" content="Lookstead | AI photo home assistant for repairs and maintenance" />
+    <meta
+      property="og:description"
+      content="Take a photo, ask a question, and get practical help with cleaning, repairs, maintenance and identifying things around your home." />
+    <meta property="og:image" content="https://lookstead.com/assets/icon-256.png" />
+    <meta property="og:image:alt" content="Lookstead app icon" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Lookstead | AI photo home assistant for repairs and maintenance" />
+    <meta
+      name="twitter:description"
+      content="Take a photo, ask a question, and get practical help with cleaning, repairs, maintenance and identifying things around your home." />
+    <meta name="twitter:image" content="https://lookstead.com/assets/icon-256.png" />
     <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32" />
     <link rel="apple-touch-icon" href="assets/icon-256.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,6 +35,44 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://lookstead.com/#organization",
+            "name": "Lookstead",
+            "url": "https://lookstead.com/",
+            "logo": "https://lookstead.com/assets/icon-256.png",
+            "email": "hello@lookstead.com"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://lookstead.com/#website",
+            "url": "https://lookstead.com/",
+            "name": "Lookstead",
+            "description": "Photo-based home assistant for cleaning, repairs, maintenance and household questions.",
+            "publisher": { "@id": "https://lookstead.com/#organization" },
+            "inLanguage": "en-GB"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Lookstead",
+            "applicationCategory": "LifestyleApplication",
+            "operatingSystem": "iOS",
+            "description": "Take a photo and ask questions about items and problems at home. Get practical next steps with clear safety guidance.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "GBP",
+              "description": "Free tier with limited photo questions per month; paid plans available in the app."
+            },
+            "publisher": { "@id": "https://lookstead.com/#organization" }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -25,7 +83,7 @@
             src="assets/white-icon-transparent.png"
             width="28"
             height="28"
-            alt="" />
+            alt="Lookstead" />
           Lookstead
         </a>
         <div class="nav-links">
@@ -51,14 +109,14 @@
             </p>
           </article>
           <article class="hero-slide" data-slide="1">
-            <h1>Ask the way you normally would.</h1>
+            <p class="hero-headline">Ask the way you normally would.</p>
             <p class="hero-lead">
               Cleaning, a stuck part, or “what is this?” Send a photo and your question. If it
               looks unsafe, we say stop and call someone qualified.
             </p>
           </article>
           <article class="hero-slide" data-slide="2">
-            <h1>My Home holds the details.</h1>
+            <p class="hero-headline">My Home holds the details.</p>
             <p class="hero-lead">
               Save the boiler, the washer, the switch in the hall. Next time you ask, answers can
               use what you already stored.
