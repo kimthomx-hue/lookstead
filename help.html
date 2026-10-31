@@ -4,27 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Help · Lookstead</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <article class="page-legal">
-      <a class="back" href="/">← Lookstead</a>
-      <h1>Help &amp; support</h1>
-      <h2>How do I ask my first question?</h2>
-      <p>
-        From Home, tap Take a photo or Choose from photos. Preview the image, pick or type your
-        question, then submit.
-      </p>
-      <h2>Subscriptions</h2>
-      <p>
-        Free tier includes a limited number of photo questions per month. Plus and Family increase
-        limits. Manage billing in Apple or Google subscription settings.
-      </p>
-      <h2>Contact</h2>
-      <p>
-        Email <a href="mailto:support@lookstead.com">support@lookstead.com</a> with your device type
-        and a short description.
-      </p>
-    </article>
+  <body class="page-help-body">
+    <header class="help-top">
+      <a class="help-back" href="/">← Lookstead</a>
+    </header>
+
+    <main class="page-help">
+      <h1 class="faq-page-title">Frequently asked questions</h1>
+      <p class="faq-page-lead">The questions our support team hears most.</p>
+
+      <div id="faq-list" class="faq-list"></div>
+
+      <button type="button" id="faq-see-all" class="faq-see-all">See all FAQs →</button>
+
+      <section class="faq-contact">
+        <h2 class="faq-contact-title">Still need help?</h2>
+        <p>
+          Email <a href="mailto:support@lookstead.com">support@lookstead.com</a> or
+          <a href="mailto:hello@lookstead.com">hello@lookstead.com</a>.
+          <a href="privacy.html">Privacy policy</a>
+        </p>
+      </section>
+    </main>
+
+    <script src="help.js"></script>
   </body>
 </html>
