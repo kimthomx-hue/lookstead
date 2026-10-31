@@ -76,11 +76,11 @@ a {
 }
 
 .brand-mark {
-  width: 16px;
-  height: 16px;
-  background: var(--accent);
-  border-radius: 3px;
-  transform: rotate(45deg);
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -498,9 +498,19 @@ a {
 }
 
 .help-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-weight: 600;
   color: var(--primary);
   font-size: 0.9375rem;
+}
+
+.help-back-mark {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .page-help {
