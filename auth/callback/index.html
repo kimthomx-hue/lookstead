@@ -15,11 +15,12 @@
         <h1>Opening Lookstead</h1>
         <p id="status">Finishing sign-in in the app…</p>
         <p>
-          <a id="open-app" class="btn btn-primary" href="lookstead://auth/callback">Open Lookstead</a>
+          <a id="open-app" class="btn btn-primary" href="lookstead://callback">Open Lookstead</a>
         </p>
         <p class="text-muted" style="margin-top: 1.5rem; font-size: 0.95rem">
-          Use the button if the app did not open automatically. Open this link on the same phone where
-          Lookstead is installed (TestFlight or App Store build).
+          Open this link on the same phone and the same app you used to request the email (Expo Go,
+          TestFlight, or App Store). If you were testing in Expo Go, do not use this page—request the
+          email again from Expo Go so the link targets Expo directly.
         </p>
         <p><a href="/help/">Help</a></p>
       </div>
@@ -30,7 +31,7 @@
         var link = document.getElementById('open-app');
         var status = document.getElementById('status');
         if (hash && link) {
-          link.href = 'lookstead://auth/callback' + hash;
+          link.href = 'lookstead://callback' + hash;
         }
         if (hash.indexOf('error=') !== -1) {
           status.textContent =
