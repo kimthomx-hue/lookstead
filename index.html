@@ -5,36 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Lookstead is a home assistant app for iPhone. Take a photo, ask a question, and get practical help with cleaning, repairs, maintenance and identifying things around your home." />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+      content="Lookstead is a photo home assistant app for iPhone. Snap something at home, ask in plain English, and get practical help with cleaning, DIY fixes, maintenance, and when to call a tradesperson in the UK." />
+    <meta
+      name="keywords"
+      content="Lookstead, home assistant app, photo home repair, identify appliance, cleaning advice, home maintenance app, UK home help" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Lookstead" />
     <meta name="theme-color" content="#0f1210" />
-    <title>Lookstead | AI photo home assistant for repairs and maintenance</title>
+    <title>Lookstead | Photo home assistant for repairs, cleaning and maintenance</title>
     <link rel="canonical" href="https://lookstead.com/" />
+    <link rel="alternate" hreflang="en-gb" href="https://lookstead.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://lookstead.com/" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Lookstead" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:url" content="https://lookstead.com/" />
-    <meta property="og:title" content="Lookstead | AI photo home assistant for repairs and maintenance" />
+    <meta property="og:title" content="Lookstead | Photo home assistant for repairs, cleaning and maintenance" />
     <meta
       property="og:description"
       content="Take a photo, ask a question, and get practical help with cleaning, repairs, maintenance and identifying things around your home." />
     <meta property="og:image" content="https://lookstead.com/assets/icon-256.png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
     <meta property="og:image:alt" content="Lookstead app icon" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Lookstead | AI photo home assistant for repairs and maintenance" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lookstead | Photo home assistant for repairs, cleaning and maintenance" />
     <meta
       name="twitter:description"
       content="Take a photo, ask a question, and get practical help with cleaning, repairs, maintenance and identifying things around your home." />
     <meta name="twitter:image" content="https://lookstead.com/assets/icon-256.png" />
-    <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32" />
-    <link rel="apple-touch-icon" href="assets/icon-256.png" />
+    <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/icon-256.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -45,7 +53,15 @@
             "name": "Lookstead",
             "url": "https://lookstead.com/",
             "logo": "https://lookstead.com/assets/icon-256.png",
-            "email": "hello@lookstead.com"
+            "email": "hello@lookstead.com",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "email": "support@lookstead.com",
+                "availableLanguage": ["English"]
+              }
+            ]
           },
           {
             "@type": "WebSite",
@@ -57,16 +73,19 @@
             "inLanguage": "en-GB"
           },
           {
-            "@type": "SoftwareApplication",
+            "@type": "MobileApplication",
+            "@id": "https://lookstead.com/#app",
             "name": "Lookstead",
+            "url": "https://lookstead.com/",
             "applicationCategory": "LifestyleApplication",
             "operatingSystem": "iOS",
             "description": "Take a photo and ask questions about items and problems at home. Get practical next steps with clear safety guidance.",
+            "image": "https://lookstead.com/assets/icon-256.png",
             "offers": {
               "@type": "Offer",
               "price": "0",
               "priceCurrency": "GBP",
-              "description": "Free tier with limited photo questions per month; paid plans available in the app."
+              "description": "Free tier with limited photo questions per month; Plus and Family plans in the app."
             },
             "publisher": { "@id": "https://lookstead.com/#organization" }
           }
@@ -80,7 +99,7 @@
         <a class="brand" href="/">
           <img
             class="brand-mark"
-            src="assets/white-icon-transparent.png"
+            src="/assets/white-icon-transparent.png"
             width="28"
             height="28"
             alt="Lookstead" />
@@ -90,6 +109,7 @@
           <a href="#features">Around the home</a>
           <a href="#how">How it works</a>
           <a href="#pricing">Pricing</a>
+          <a href="/help">Help</a>
         </div>
         <a class="nav-cta app-store-link" href="#download">
           <span class="apple" aria-hidden="true"></span>
@@ -133,6 +153,26 @@
           <button type="button" class="dot is-active" data-goto="0" aria-label="Slide 1" aria-selected="true"></button>
           <button type="button" class="dot" data-goto="1" aria-label="Slide 2" aria-selected="false"></button>
           <button type="button" class="dot" data-goto="2" aria-label="Slide 3" aria-selected="false"></button>
+        </div>
+      </section>
+
+      <section id="about" class="section section-muted" aria-labelledby="about-heading">
+        <div class="section-inner narrow">
+          <h2 id="about-heading" class="section-label">A home assistant that starts with a photo</h2>
+          <p class="pricing-lead">
+            Lookstead is for the moment you are staring at something at home and thinking: what is
+            this, can I clean it, can I fix it, or do I need a professional? Unlike a map search,
+            you do not need to know the trade yet. You take a picture, ask in normal language, and
+            get step-by-step guidance with clear safety limits for electrical, gas and structural
+            risks.
+          </p>
+          <p class="pricing-lead">
+            Save appliances and fixtures to <strong>My Home</strong> so later questions can use
+            context. Free includes a limited number of photo questions each month; Plus and Family
+            add headroom in the iPhone app. Read the
+            <a href="/help">help centre</a>, <a href="/privacy">privacy policy</a>, or
+            <a href="/terms">terms of service</a>.
+          </p>
         </div>
       </section>
 
@@ -230,6 +270,6 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="/main.js" defer></script>
   </body>
 </html>

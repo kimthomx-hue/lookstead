@@ -9,24 +9,41 @@
     <meta name="robots" content="index, follow" />
     <title>Privacy Policy | Lookstead</title>
     <link rel="canonical" href="https://lookstead.com/privacy" />
+    <link rel="alternate" hreflang="en-gb" href="https://lookstead.com/privacy" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Lookstead" />
+    <meta property="og:locale" content="en_GB" />
     <meta property="og:url" content="https://lookstead.com/privacy" />
     <meta property="og:title" content="Privacy Policy | Lookstead" />
     <meta
       property="og:description"
       content="How Lookstead handles photos, questions and household data." />
+    <meta property="og:image" content="https://lookstead.com/assets/icon-256.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Privacy Policy | Lookstead" />
     <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="32x32" />
     <link rel="stylesheet" href="/styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Privacy Policy",
-        "url": "https://lookstead.com/privacy",
-        "description": "How Lookstead handles photos, questions and household data.",
-        "isPartOf": { "@type": "WebSite", "name": "Lookstead", "url": "https://lookstead.com/" },
-        "inLanguage": "en-GB"
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lookstead.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Privacy", "item": "https://lookstead.com/privacy" }
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "name": "Privacy Policy",
+            "url": "https://lookstead.com/privacy",
+            "description": "How Lookstead handles photos, questions and household data.",
+            "isPartOf": { "@type": "WebSite", "name": "Lookstead", "url": "https://lookstead.com/" },
+            "inLanguage": "en-GB"
+          }
+        ]
       }
     </script>
   </head>
