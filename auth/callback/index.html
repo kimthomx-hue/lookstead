@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Opening Lookstead…</title>
+    <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/assets/auth-redirect.js"></script>
+  </head>
+  <body>
+    <main class="section section-muted" style="min-height: 70vh; display: flex; align-items: center">
+      <div class="section-inner narrow center">
+        <h1>Opening Lookstead</h1>
+        <p id="status">Finishing sign-in in the app…</p>
+        <p>
+          <a id="open-app" class="btn btn-primary" href="lookstead://auth/callback">Open Lookstead</a>
+        </p>
+        <p class="text-muted" style="margin-top: 1.5rem; font-size: 0.95rem">
+          Use the button if the app did not open automatically. Open this link on the same phone where
+          Lookstead is installed (TestFlight or App Store build).
+        </p>
+        <p><a href="/help/">Help</a></p>
+      </div>
+    </main>
+    <script>
+      (function () {
+        var hash = window.location.hash || '';
+        var link = document.getElementById('open-app');
+        var status = document.getElementById('status');
+        if (hash && link) {
+          link.href = 'lookstead://auth/callback' + hash;
+        }
+        if (hash.indexOf('error=') !== -1) {
+          status.textContent =
+            'Sign-in could not be completed. Request a new email link in the app and try again.';
+        }
+      })();
+    </script>
+  </body>
+</html>
